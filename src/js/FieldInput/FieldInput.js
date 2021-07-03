@@ -2,7 +2,7 @@ export default class FieldInput {
   constructor() {
     // this.inputBox;
 
-    this.createForm()
+    this.createForm();
   }
 
   createForm() {
@@ -22,8 +22,8 @@ export default class FieldInput {
                           </div>
                           <div class="button-container">
                             <button class="button">Добавить</button>
-                          </div>`
-    
+                          </div>`;
+
     this.formContainer.appendChild(this.form);
     document.body.appendChild(this.formContainer);
 

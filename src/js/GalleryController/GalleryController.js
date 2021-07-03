@@ -1,41 +1,41 @@
-import FieldImages from "../FieldImages/FieldImages";
+import FieldImages from '../FieldImages/FieldImages';
 
 export default class GalleryController {
   constructor(form) {
     this.form = form;
     this.arrURL = [];
-    
+
     this.init();
   }
 
   init() {
     this.drawGalleryContainer();
-    this.addListeners()
+    this.addListeners();
   }
 
   drawGalleryContainer() {
     this.GalleryContainer = document.createElement('div');
     this.GalleryContainer.classList.add('gallery-container');
-    document.body.appendChild(this.GalleryContainer)
+    document.body.appendChild(this.GalleryContainer);
   }
 
   addListeners() {
-    document.addEventListener('click', event => {
+    document.addEventListener('click', (event) => {
       event.preventDefault();
-      if(event.target.closest('.button')) {
+      if (event.target.closest('.button')) {
         this.checkValidityURL();
       }
 
-      if(event.target.closest('.remove-button')) {
+      if (event.target.closest('.remove-button')) {
         this.GalleryContainer.removeChild(event.target.closest('.container-img'));
       }
     });
 
-    document.addEventListener('keydown', event => {
+    document.addEventListener('keydown', (event) => {
       if (event.code === 'Enter') {
         this.form.button.click();
       }
-    })
+    });
   }
 
   checkValidityURL() {

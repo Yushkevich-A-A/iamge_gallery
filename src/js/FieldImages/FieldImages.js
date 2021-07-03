@@ -5,7 +5,7 @@ export default class FieldImages {
     this.alterText = alterText;
     this.imgGallery = document.querySelector('.gallery-container');
 
-    this.drawBlockImage()
+    this.drawBlockImage();
   }
 
   drawBlockImage() {
