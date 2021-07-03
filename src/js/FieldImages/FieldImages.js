@@ -1,7 +1,6 @@
 export default class FieldImages {
   constructor(img, alterText = 'изображение') {
     this.img = img;
-    console.log(this.img);
     this.alterText = alterText;
     this.imgGallery = document.querySelector('.gallery-container');
 
