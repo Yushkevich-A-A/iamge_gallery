@@ -1,6 +1,6 @@
 export default class FieldInput {
   constructor() {
-  this.createForm();
+    this.createForm();
   }
 
   createForm() {
