@@ -1,0 +1,9 @@
+{
+  "name": "image_gallery",
+  "version": "1.0.0",
+  "description": "image gallery",
+  "main": "index.js",
+  "repository": "https://github.com/Yushkevich-A-A/image_gallery.git",
+  "author": "Yushkevich-A-A <Mortifer1993@yandex.ru>",
+  "license": "MIT"
+}
